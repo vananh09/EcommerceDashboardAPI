@@ -7,6 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @Qualifier(value = "OrderReceivedRepository")
-
 public interface OrderReceivedRepository extends JpaRepository<OrderReceived, Long> {
 }

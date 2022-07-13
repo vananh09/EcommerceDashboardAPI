@@ -1,18 +1,25 @@
 package com.ecomDashboard.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.sql.Date;
 
 @Entity
-@Table(name = "EmployeeInformation", schema = "ecomDashboard")
+@Table(name = "employee_information", schema = "ecomdashboard")
 public class EmployeeInformation extends BaseEntity{
 
+    @Column
     private String name;
+    @Column
     private String position;
+    @Column
     private String officeLocation;
+    @Column
     private int age;
+    @Column
     private Date date;
+    @Column
     private double salary;
 
     public String getName() {

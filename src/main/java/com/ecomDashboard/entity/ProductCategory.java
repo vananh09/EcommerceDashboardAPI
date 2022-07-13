@@ -1,5 +1,6 @@
 package com.ecomDashboard.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
@@ -7,8 +8,11 @@ import javax.persistence.Table;
 @Table(name = "ProductCategory", schema = "ecomDashboard")
 public class ProductCategory extends BaseEntity {
 
+    @Column
     private String categoryName;
+    @Column
     private int percentage;
+    @Column
     private boolean bestCategory;
 
     public String getCategoryName() {
